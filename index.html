@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <!-- Header section begins here  -->
+    <header class="header">
+      <h1 class="header__name">
+        <i class="fa-solid fa-cloud-sun-rain header__name--logo"></i> Weather
+        App
+      </h1>
+
+      <form action="#" class="header__form">
+        <input
+          type="text"
+          placeholder="Lagos"
+          id="header__searchField"
+          class="header__searchField"
+          name="header__searchField"
+        />
+        <button class="header__button">Search</button>
+      </form>
+    </header>
+    <!-- Header section ends here -->
+    <!-- Main section starts here -->
+    <main>
+      <!-- Current Weather data section starts here -->
+      <section class="currentWeather">
+        <i class="fa-solid fa-sun currentWeather__icon"></i>
+        <p class="currentWeather__location">
+          <span class="currentWeather__location--name">Lagos</span>,
+          <span class="currentWeather__location--country">Nigeria</span>
+        </p>
+        <h2><span class="currentWeather__temp">32</span><sup>o</sup>C</h2>
+        <p class="currentWeather__remark">Sunny - Feels like 36<sup>o</sup></p>
+      </section>
+      <section class="error-message">&nbsp;</section>
+      <!-- Current Weather data section starts here -->
+      <!-- Weather stats data section starts here -->
+      <section class="weather-stats">
+        <div class="weather-stats--data">
+          <h3>Humidity</h3>
+          <p><span class="humidity">78</span>%</p>
+        </div>
+        <div class="weather-stats--data">
+          <h3>Wind</h3>
+          <p><span class="wind">14</span> km/h</p>
+        </div>
+        <div class="weather-stats--data">
+          <h3>UV Index</h3>
+          <p><span class="uv-index">High</span></p>
+        </div>
+      </section>
+      <!-- Weather stats data ends here -->
+
+      <section class="weather-forecast">
+        <h4>5-Day Forecast</h4>
+        <!-- <div class="weather-forecast__readings">
+          <p class="weather-forecast__readings--day">Today</p>
+          <p class="">
+            <i class="fa-solid fa-sun weather-forecast__readings--icon"></i>
+          </p>
+          <p class="weather-forecast__readings--temp">
+            <span class="weather-forecast__readings--tempMax"
+              >34<sup>0</sup></span
+            >
+            <span class="weather-forecast__readings--tempMin"
+              >27<sup>0</sup></span
+            >
+          </p>
+        </div> -->
+      </section>
+    </main>
+    <!-- Main section ends here -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
